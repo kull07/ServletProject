@@ -1,6 +1,6 @@
 package com.mainservlet.controller;
 
-import com.mainservlet.model.UserSystem;
+import com.mainservlet.model.UserAddSystem;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -9,28 +9,23 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class AddUser extends HttpServlet {
+public class RegistrationController extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher rd = null;
         if(req.getParameter("save")!= null){
-            String user = req.getParameter("user");
+            String user = req.getParameter("userName");
             String password = req.getParameter("password");
             String email= req.getParameter("email");
-            String address= req.getParameter("address");
-            String phone= req.getParameter("phone");
-            UserSystem userNew = new UserSystem();
-            userNew.setUser(user);
-            userNew.setPassword(password);
-            userNew.setEmail(email);
-            userNew.setAddress(address);
-            userNew.setPhone(phone);
-            if(userNew.createdOK(userNew)){
-                req.setAttribute("userNewName1", userNew.getUser());
+
+            UserAddSystem userNew = new UserAddSystem(user, password, email);
+
+
+            if(userNew.readyForBuild(userNew)){
+                req.setAttribute("userNewName1", userNew.getUserName());
                 req.setAttribute("userNewPass1", userNew.getPassword());
                 req.setAttribute("userNewEmail1", userNew.getEmail());
-                req.setAttribute("userNewAddress1", userNew.getAddress());
-                req.setAttribute("userNewPhone1", userNew.getPhone());
+
                 rd = req.getRequestDispatcher("WEB-INF/view/registrationOK.jsp");
 
             }

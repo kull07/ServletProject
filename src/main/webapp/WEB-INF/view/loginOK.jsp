@@ -5,6 +5,6 @@
 </head>
 <body>
 <br>
-    <h1 action="CheckUser" align="center">Successfully<br>login. Welcome ${nameUser} </h1>
+    <h1 action="LoginController" align="center">Successfully<br>login. Welcome ${nameUser} </h1>
 </body>
 </html>

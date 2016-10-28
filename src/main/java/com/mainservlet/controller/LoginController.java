@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class CheckUser extends HttpServlet {
+public class LoginController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -24,11 +24,11 @@ public class CheckUser extends HttpServlet {
         String pasUser = "111";
         RequestDispatcher rd = null;
         if(nameUser != null){
-            if(nameUser.equals(req.getParameter("user")) && pasUser.equals(req.getParameter("password"))){
-                req.setAttribute("nameUser", req.getParameter("user"));
+            if(nameUser.equals(req.getParameter("userName")) && pasUser.equals(req.getParameter("password"))){
+                req.setAttribute("nameUser", req.getParameter("userName"));
                 rd = req.getRequestDispatcher("WEB-INF/view/loginOK.jsp");
             }
-            else if(!pasUser.equals(req.getParameter("password")) || !nameUser.equals(req.getParameter("user"))) {
+            else if(!pasUser.equals(req.getParameter("password")) || !nameUser.equals(req.getParameter("userName"))) {
                 rd = req.getRequestDispatcher("WEB-INF/view/registration.jsp");
             }
         }else {

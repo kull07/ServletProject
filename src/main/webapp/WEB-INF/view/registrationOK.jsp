@@ -7,10 +7,10 @@
 <body>
 
 <br>
-<h1 action="AddUser" align="center">Successfully<br> registration user ${userNewName1} </h1>
+<h1 action="RegistrationController" align="center">Successfully<br> registration userName ${userNewName1} </h1>
 
 <table border="1" align="center">
-    <caption>Data new user</caption>
+    <caption>Data new userName</caption>
     <tr>
         <th>User Name</th>
         <th>Email</th>
