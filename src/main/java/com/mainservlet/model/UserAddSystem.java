@@ -5,6 +5,8 @@ public class UserAddSystem {
     protected String password;
     protected String email;
 
+    CheckValidationData checkUser = new CheckValidationData();
+
 
     public UserAddSystem() {
     }
@@ -20,9 +22,10 @@ public class UserAddSystem {
                  && !getUserName().equals("") && !getPassword().equals("")
                 && !getEmail().equals(""))
         {
+            if(checkUser.checkLogin(getUserName()) && checkUser.checkEmail(getEmail()) && checkUser.checkPassword(getPassword())){
             return true;
-        }
-        else  return false;
+            }else return false;
+        }else  return false;
     }
 
     public String getUserName() {

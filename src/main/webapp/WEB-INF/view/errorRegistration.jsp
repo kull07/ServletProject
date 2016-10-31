@@ -6,6 +6,7 @@
 <body>
 
 <h1 align="center">User already create <br>or entry incorrect data</h1>
+<h3><p align="center"> <a href="/RegistrationController">Try again</a></p></h3>
 
 </body>
 </html>

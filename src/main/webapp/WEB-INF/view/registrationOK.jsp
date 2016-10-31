@@ -7,21 +7,21 @@
 <body>
 
 <br>
-<h1 action="RegistrationController" align="center">Successfully<br> registration userName ${userNewName1} </h1>
+<h1 action="RegistrationController" align="center">Successfully<br> registration new user!</h1>
 
 <table border="1" align="center">
-    <caption>Data new userName</caption>
+    <caption>Wellcome, ${userNewName1}. Your data in system:</caption>
     <tr>
         <th>User Name</th>
-        <th>Email</th>
-        <th>Address</th>
-        <th>Phone Number</th>
+        <th>E-mail</th>
+        <th>Password</th>
     </tr>
     <tr>
         <td>${userNewName1}</td>
         <td>${userNewEmail1}</td>
-        <td>${userNewAddress1}</td>
-        <td>${userNewPhone1}</td>
+        <td>${userNewPass1}</td>
+
+
     </tr>
 </table>
 

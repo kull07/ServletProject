@@ -11,6 +11,14 @@ import java.io.IOException;
 
 public class RegistrationController extends HttpServlet {
     @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType("text/html");
+        RequestDispatcher rd = null;
+        rd = req.getRequestDispatcher("WEB-INF/view/registration.jsp");
+        rd.forward(req, resp);
+    }
+
+    @Override
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher rd = null;
         if(req.getParameter("save")!= null){
