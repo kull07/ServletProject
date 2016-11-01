@@ -1,0 +1,22 @@
+body {
+    background: #f3f2f3;
+    color: #000000;
+    font-family: Trebuchet MS, Arial, Times New Roman;
+    font-size: 12px;
+}
+.inputTextForm {
+    width: 250px;
+}
+
+.buttonForm{
+    margin-bottom: auto;
+    padding-bottom: 6px;
+}
+
+#wrapper{
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+

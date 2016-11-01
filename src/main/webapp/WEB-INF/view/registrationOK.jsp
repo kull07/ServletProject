@@ -21,9 +21,9 @@
         <td>${userNewEmail1}</td>
         <td>${userNewPass1}</td>
 
-
     </tr>
 </table>
+<h3><p align="center"><a href="/LoginController">Pleas Login!</a></p></h3>
 
 </body>
 </html>
