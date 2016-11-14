@@ -17,8 +17,9 @@
      <tr><td>User name:</td><td><input type="text" name="userName" placeholder="Enter you user name"><br></td></tr>
      <tr><td>Password:</td><td><input type="password" name="password" placeholder="Enter you password"><br></td></tr>
 
-      <tr><td><input type="submit" name="login" class="buttonForm" value = "Entrance" ></td>
-            <td><input type="submit" name="registration" class="buttonForm" value="Registration" ></td></tr>
+      <tr><td><input type="submit" name="login"  value = "Entrance" ></td>
+            <td><input type="submit" name="registration"  value="Registration" ></td></tr>
+      <tr><td><input type="submit" name="cancel"  value="Back to Start Page"></td></tr>
 
     </table>
 

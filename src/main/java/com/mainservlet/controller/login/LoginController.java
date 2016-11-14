@@ -1,4 +1,4 @@
-package com.mainservlet.controller;
+package com.mainservlet.controller.login;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -23,17 +23,24 @@ public class LoginController extends HttpServlet {
         String nameUser = "roma";
         String pasUser = "111";
         RequestDispatcher rd = null;
-        if(nameUser != null){
-            if(nameUser.equals(req.getParameter("userName")) && pasUser.equals(req.getParameter("password"))){
-                req.setAttribute("nameUser", req.getParameter("userName"));
-                rd = req.getRequestDispatcher("WEB-INF/view/loginOK.jsp");
-            }
-            else if(!pasUser.equals(req.getParameter("password")) || !nameUser.equals(req.getParameter("userName"))) {
+        if(req.getParameter("login") != null) {
+            if (nameUser != null) {
+                if (nameUser.equals(req.getParameter("userName")) && pasUser.equals(req.getParameter("password"))) {
+                    req.setAttribute("nameUser", req.getParameter("userName"));
+                    rd = req.getRequestDispatcher("WEB-INF/view/loginOK.jsp");
+                } else if (!pasUser.equals(req.getParameter("password")) || !nameUser.equals(req.getParameter("userName"))) {
+                    rd = req.getRequestDispatcher("WEB-INF/view/registration.jsp");
+                }
+            } else {
                 rd = req.getRequestDispatcher("WEB-INF/view/registration.jsp");
             }
-        }else {
-                rd = req.getRequestDispatcher("WEB-INF/view/registration.jsp");
-            }
+        }
+        if(req.getParameter("registration") !=null){
+            rd = req.getRequestDispatcher("WEB-INF/view/registration.jsp");
+        }
+        if(req.getParameter("cancel") != null){
+            rd = req.getRequestDispatcher("WEB-INF/view/startPage.jsp");
+        }
             rd.forward(req, resp);
         }
 

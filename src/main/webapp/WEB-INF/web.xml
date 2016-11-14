@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>LoginController</servlet-name>
-        <servlet-class>com.mainservlet.controller.LoginController</servlet-class>
+        <servlet-class>com.mainservlet.controller.login.LoginController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginController</servlet-name>
@@ -15,11 +15,29 @@
 
     <servlet>
         <servlet-name>RegistrationController</servlet-name>
-        <servlet-class>com.mainservlet.controller.RegistrationController</servlet-class>
+        <servlet-class>com.mainservlet.controller.login.RegistrationController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>RegistrationController</servlet-name>
         <url-pattern>/RegistrationController</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SelectionController</servlet-name>
+        <servlet-class>com.mainservlet.controller.login.SelectionController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectionController</servlet-name>
+        <url-pattern>/SelectionController</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PollsController</servlet-name>
+        <servlet-class>com.mainservlet.controller.polls.PollsController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PollsController</servlet-name>
+        <url-pattern>/PollsController</url-pattern>
     </servlet-mapping>
 
 </web-app>

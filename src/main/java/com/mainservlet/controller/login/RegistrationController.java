@@ -1,4 +1,4 @@
-package com.mainservlet.controller;
+package com.mainservlet.controller.login;
 
 import com.mainservlet.model.UserAddSystem;
 
