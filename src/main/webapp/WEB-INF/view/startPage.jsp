@@ -11,9 +11,9 @@
         <h1>Welcome to system for polls</h1>
         <img src="images/YourChoice.png">
         <br>
-        <input type="submit" name="oneEntrance" value="One-time entrance">
-        <input type="submit" name="alreadyRegistered" value="Go to a Login">
-        <input type="submit" name="readyToRegister" value="Go to registration">
+        <input type="submit" name="oneEntrance" class="buttonForm" value="One-time entrance">
+        <input type="submit" name="alreadyRegistered" class="buttonForm" value="Go to a Login">
+        <input type="submit" name="readyToRegister" class="buttonForm" value="Go to registration">
     </form>
     </div>
     </body>

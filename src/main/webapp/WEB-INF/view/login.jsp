@@ -19,9 +19,10 @@
 
       <tr><td><input type="submit" name="login"  value = "Entrance" ></td>
             <td><input type="submit" name="registration"  value="Registration" ></td></tr>
-      <tr><td><input type="submit" name="cancel"  value="Back to Start Page"></td></tr>
 
     </table>
+    <br>
+    <input type="submit" name="cancel"  value="Back to Start Page">
 
 </form>
 </div>

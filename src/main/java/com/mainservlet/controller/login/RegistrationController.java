@@ -41,6 +41,9 @@ public class RegistrationController extends HttpServlet {
         }else if(req.getParameter("cancel")!=null){
             rd = req.getRequestDispatcher("WEB-INF/view/login.jsp");
         }
+        else if(req.getParameter("startPage") != null){
+            rd = req.getRequestDispatcher("WEB-INF/view/startPage.jsp");
+        }
         rd.forward(req, resp);
     }
 }

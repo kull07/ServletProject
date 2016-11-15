@@ -9,8 +9,9 @@ body {
 }
 
 .buttonForm{
-    margin-bottom: auto;
-    padding-bottom: 6px;
+    border: #688aa8;
+    color: black;
+    font-size: x-large;
 }
 
 #wrapper{

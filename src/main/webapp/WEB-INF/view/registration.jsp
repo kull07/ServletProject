@@ -15,7 +15,8 @@
         <tr><td>E-mail:</td><td> <input type="text" name="email" class="inputTextForm" placeholder="Example: administration@gmail.com"><br></td></tr>
 
         <tr><td><input type="submit" name="save" value="Save"></td>
-            <td><input type="submit" name="cancel" value="Exit"></td></tr>
+            <td><input type="submit" name="cancel" value="Exit to Login"></td></tr>
+        <th><input type="submit" name="startPage" value="Back to Start Page"></th>
 
     </table>
 </form>

@@ -22,7 +22,7 @@ public class SelectionController extends HttpServlet {
         RequestDispatcher rd = null;
 
         if(req.getParameter("oneEntrance") != null){
-            rd = req.getRequestDispatcher("WEB-INF/view/login.jsp");
+            rd = req.getRequestDispatcher("WEB-INF/view/polls.jsp");
         }
         else if(req.getParameter("alreadyRegistered") != null){
             rd = req.getRequestDispatcher("WEB-INF/view/login.jsp");

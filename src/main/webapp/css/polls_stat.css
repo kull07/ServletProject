@@ -1,0 +1,12 @@
+body{
+    background: #f3f2f3;
+    color: #000000;
+    font-family: Trebuchet MS, Arial, Times New Roman;
+    font-size: 12px;
+}
+#wrappers{
+    text-align: center;
+}
+.textForm{
+    width: 250px;
+}
